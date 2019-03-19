@@ -1,2 +1,6 @@
 # Network-Prediction
-This project predicts the salary, position, and future connections of the employees of a company using their logs of email exchanges.
+This project predicts the salary, position, and future connections of the employees of a company using their logs of email exchanges. The findings are presented in [Network_Prediction.ipynb](https://github.com/iDataist/Network-Prediction/blob/master/Network_Prediction.ipynb). 
+
+The raw data is stored in [email_prediction.txt](https://github.com/iDataist/Network-Prediction/blob/master/email_prediction.txt), a company's email network where each node corresponds to a person at the company, and each edge indicates that at least one email has been sent between two people. The network also contains the node attributes `Department` and `ManagementSalary`. `Department` indicates the department in the company which the person belongs to, and `ManagementSalary` indicates whether that person is receiving a management position salary.
+
+The future connections information has been loaded into the variable [future_connections](https://github.com/iDataist/Network-Prediction/blob/master/Future_Connections.csv). The index is a tuple indicating a pair of nodes that currently do not have a connection, and the `Future Connection` column indicates if an edge between those two nodes will exist in the future, where a value of 1.0 indicates a future connection.
